@@ -1,0 +1,1 @@
+import{j as a}from"./index-B_YeXj6G.js";const m=({children:r,color:t,width:s,height:n,onClick:e})=>a.jsx("button",{className:"transparent-btn",onClick:e,style:{height:n,width:s,color:t,border:`.0625rem solid ${t}`},children:r});export{m as B};
