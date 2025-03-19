@@ -1,0 +1,79 @@
+
+
+.header__nav {
+	height: 92px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__list {
+	display: flex;
+	column-gap: 40px;
+}
+
+.header__list a {
+	color: var(--gray-800);
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 160%;
+	transition: all 0.3s ease;
+}
+
+.header__list a:hover {
+	color: var(--primary);
+}
+
+.logo {
+	flex-shrink: 0;
+	margin-right: 20px;
+}
+
+.header__contacts {
+	display: flex;
+	column-gap: 36px;
+	align-items: center;
+}
+
+.header__contacts-phone {
+	display: flex;
+	column-gap: 12px;
+	white-space: nowrap;
+}
+
+.header__contacts-email {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+
+
+.contacts-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-title {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--gray-800);
+}
+
+.contact-desc {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: var(--gray-900);
+}
+
+.header__contacts-phone::before {
+	content: url('./../../../assets/images/header/iPhone.svg');
+}
+
+.header__contacts-email::before {
+	content: url('./../../../assets/images/header/Chat.svg');
+}

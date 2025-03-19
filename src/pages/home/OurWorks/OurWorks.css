@@ -1,0 +1,105 @@
+.our-works {
+	padding-top: 7.5rem;
+	padding-bottom: 7.5rem;
+}
+
+.our-works__top {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 3.75rem;
+}
+.our-works__top-buttons {
+	display: flex;
+	align-items: center;
+	column-gap: .75rem;
+}
+
+.prev-btn {
+	width: 1.5rem;
+	height: 1.5rem;
+	background: transparent;
+}
+
+.next-btn {
+	width: 3rem;
+	height: 3rem;
+	background: var(--primary);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.our-works__card {
+	max-height: 26.875rem;
+	max-width: 24.375rem;
+	transition: all 0.5s ease;
+}
+.our-works__card img {
+	transition: all 0.5s ease;
+	display: block;
+}
+
+.our-works__card:hover {
+	transform: translateY(-3.125rem);
+}
+
+/* .our-works__card:hover img {
+	width: 100%;
+	height: 17.3125rem;
+} */
+
+.our-works__card-text {
+	background: #ebeaea;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: .125rem var(--gray-700);
+	max-width: 24.375rem;
+}
+
+.our-works__card-text h4 {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--gray-900);
+	margin-top: 1rem;
+}
+
+.our-works__card-text p {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.3125rem;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--gray-700);
+}
+
+.our-works__card-text button {
+	width: 10.75rem;
+	height: 2.75rem;
+	border: .0625rem solid var(--primary);
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: .875rem;
+	line-height: 2.75rem;
+	letter-spacing: .0313rem;
+	background: transparent;
+	color: var(--primary);
+	margin-top: 1.5rem;
+	opacity: none;
+	transition: all 0.5s ease;
+	margin-bottom: 1.5rem;
+}
+
+.our-works__explore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2.5rem;
+	margin-top: 5rem;
+}

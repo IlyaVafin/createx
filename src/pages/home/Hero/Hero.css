@@ -1,0 +1,131 @@
+.hero__slide-text {
+	position: absolute;
+	top: 13.75rem;
+	left: 21.5625rem;
+}
+
+.hero__slide-text h1 {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 4.5rem;
+	line-height: 130%;
+	letter-spacing: 0.01em;
+	color: var(--white);
+	max-width: 36.0625rem;
+}
+
+.hero__slide-text h1 > mark {
+	color: var(--primary);
+	background: none;
+}
+
+.hero__slide-desc {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 150%;
+	color: var(--white);
+	max-width: 37.1875rem;
+	margin-bottom: 3.8125rem;
+	margin-top: 1.5rem;
+}
+
+.hero__buttons {
+	display: flex;
+	align-items: center;
+	column-gap: 1.5rem;
+}
+
+.img-slide {
+	position: relative;
+	width: 100%;
+	max-height: 61.75rem;
+	top: 0;
+	left: 0;
+}
+
+.swiper-pagination-bullet {
+	width: 11.125rem !important;
+	height: .125rem !important;
+	background: var(--white) !important;
+	color: var(--white);
+}
+
+/* Добавляем цифру над каждым буллетом */
+.swiper-pagination-bullet:nth-child(1)::before {
+	position: absolute;
+	content: '01';
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 150%;
+	color: var(--white);
+	top: -1.875rem;
+}
+.swiper-pagination-bullet:nth-child(2)::before {
+	position: absolute;
+	content: '02';
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 150%;
+	color: var(--white);
+	top: -1.875rem;
+}
+.swiper-pagination-bullet:nth-child(3)::before {
+	position: absolute;
+	content: '03';
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 150%;
+	color: var(--white);
+	top: -1.875rem;
+}
+.swiper-pagination-bullet:nth-child(4)::before {
+	position: absolute;
+	top: -1.875rem;
+	content: '04';
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 150%;
+	color: var(--white);
+}
+.swiper-pagination {
+	left: 21.5625rem !important;
+	bottom: 7.5rem !important;
+	text-align: start !important;
+}
+
+@media (max-width: 105rem) {
+	.hero__slide-text {
+		top: 6.25rem;
+		left: 18.75rem;
+	}
+	.swiper-pagination {
+		left: 18.75rem !important;
+	}
+}
+
+@media (max-width: 87.5rem) {
+	.hero__slide-text {
+		top: 2.5rem;
+	}
+	.swiper-pagination {
+		bottom: 6.25rem !important;
+	}
+}
+
+@media (max-width: 80rem) {
+	.swiper-pagination {
+		bottom: 3.125rem !important;
+	}
+}
+
+@media (max-width: 71.875rem) {
+	.hero__slide-desc {
+		margin-bottom: .9375rem;
+		margin-top: 1.25rem;
+	}
+}

@@ -1,0 +1,75 @@
+.services {
+	background-image: url('./../../../assets/images/services/bg.jpg');
+	background-size: cover;
+	width: 100%;
+	padding-bottom: 80px;
+}
+
+.services-card__wrapper {
+	display: flex;
+	column-gap: 30px;
+	margin-bottom: 80px;
+	margin-top: 60px;
+}
+
+.services__title {
+	margin-top: 240px;
+	text-align: center;
+}
+
+.services-card__item {
+	background: var(--white);
+	width: 25%;
+	height: 17.8125rem;
+	padding-top: 90px;
+}
+
+.services-card__content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
+.services-card__content h4 {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--gray-900);
+}
+
+.services__learn-more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 40px;
+}
+
+
+
+/* Стили для карточки */
+.services-card__item {
+  transition: background-color 0.3s ease;
+}
+
+/* Стили для SVG */
+.services-card__item img {
+  transition: filter 0.3s ease;
+}
+
+/* Изменение цвета при наведении */
+.services-card__item:hover {
+  background-color: var(--gray-900); /* Новый цвет фона */
+}
+
+.services-card__item:hover h4 {
+	color: var(--white);
+}
+
+.services-card__item:hover img {
+	filter: invert(100%) sepia(0%) saturate(0%) brightness(1000%);
+}

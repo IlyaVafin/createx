@@ -1,0 +1,59 @@
+.history__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.history__title {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 130%;
+	letter-spacing: 0%;
+	color: #1e212c;
+	margin-bottom: 60px;
+}
+
+.history__navigation {
+	display: flex;
+	align-items: center;
+	column-gap: 0.75rem;
+	margin-bottom: 48px;
+}
+
+.history__bullets {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.25rem;
+}
+
+.history__bullet {
+	background: none;
+	display: flex;
+	align-items: center;
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 150%;
+	opacity: 0.5;
+	column-gap: 2rem;
+}
+
+.history__bullet.active-history {
+	opacity: 1;
+	color: var(--primary);
+}
+
+.history__slider {
+	display: flex;
+	column-gap: 10.6875rem;
+}
+
+.slide-desc {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 160%;
+	letter-spacing: 0%;
+	color: var(--gray-800);
+	margin-top: 2.25rem;
+}

@@ -1,0 +1,158 @@
+.application {
+	background-image: url('./../../../assets/images/Application/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 51.625rem;
+	padding-top: 5rem;
+}
+
+.application__container {
+	max-width: 1230px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.application__form-title {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 42px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--gray-900);
+}
+
+.application__form {
+	background: var(--white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 1.25rem;
+	width: 495px;
+	padding: 3rem 2.5rem;
+	border-radius: 0.25rem;
+	box-shadow: 0px 4px 4px -4px #1e212c0d 0px 12px 10px -6px #1e212c14 0px 26px
+		24px -10px #1e212c1a 0px 60px 80px -20px #1e212c29;
+}
+
+.application__input label {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.application__input input {
+	width: 25.9375rem;
+	height: 2.75rem;
+	border-radius: 0.25rem;
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0%;
+	color: var(--gray-600);
+	border: 1px solid var(--gray-400);
+	background: var(--gray-200);
+	padding-left: 16px;
+}
+
+.application__input span {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0%;
+	color: var(--gray-800);
+}
+
+.input-message input {
+	height: 4.125rem;
+}
+
+.input-checkbox {
+	display: flex;
+	max-width: 387px;
+	column-gap: 12px;
+}
+
+.input-checkbox span {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0%;
+	color: var(--gray-800);
+}
+
+.input-checkbox label {
+	max-width: 387px;
+}
+
+.custom-checkbox {
+	margin-left: -10px;
+}
+
+/* Скрываем стандартный чекбокс */
+.custom-checkbox input[type='checkbox'] {
+	display: none;
+}
+
+/* Стиль для кастомного чекбокса */
+.custom-checkbox .checkmark {
+	position: relative;
+	display: inline-block;
+	width: 16px; /* Размер чекбокса */
+	height: 16px;
+	border-radius: 3px; /* Скругленные углы */
+	background-color: #fff; /* Фон чекбокса */
+	border: 2px solid #ff7f00; /* Оранжевая рамка */
+	cursor: pointer;
+	transition: all 0.3s;
+	margin-top: 4px;
+}
+
+/* При активации делаем фон оранжевым */
+.custom-checkbox input[type='checkbox']:checked + .checkmark {
+	background-color: var(--primary); /* Оранжевый цвет */
+	border-color: var(--primary);
+}
+
+/* Галочка */
+.custom-checkbox .checkmark::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 6px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: translate(-50%, -60%) rotate(45deg);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+/* Показываем галочку при выборе */
+.custom-checkbox input[type='checkbox']:checked + .checkmark::after {
+	opacity: 1;
+}
+
+@media (max-width: 1899px) {
+	.application {
+		padding-left: 100px;
+	}
+}
+
+.error-message {
+	color: red;
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.3125rem;
+	letter-spacing: 0%;
+}

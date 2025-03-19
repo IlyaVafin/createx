@@ -1,0 +1,74 @@
+.supported {
+	position: relative;
+	background: var(--gray-200);
+	height: 58.375rem;
+	z-index: 99999;
+}
+
+
+
+.our-clients__text {
+	max-width: 37.5rem;
+}
+
+.testim-img {
+	position: absolute;
+	left: 850px; /* Прижимаем к правому краю */
+	top: 3%;
+	z-index: 99999;
+}
+
+.our-clients__title {
+	max-width: 37.5rem;
+}
+
+.supported__slider {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3.75rem;
+}
+
+.our-clients__text p {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	letter-spacing: 0%;
+	color: var(--gray-800);
+	max-width: 37.5rem;
+	margin: 1.5rem 0;
+}
+
+.our-clients__text-name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.our-clients__text-name h5 {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	letter-spacing: 0%;
+	color: var(--gray-900);
+}
+
+.our-clients__text-name button {
+	background: transparent;
+}
+
+.our-clients__text-name span {
+	font-family: Ubuntu;
+	font-weight: 400;
+	font-size: .875rem;
+	line-height: 1.3125rem;
+	letter-spacing: 0%;
+	color: var(--gray-700);
+}
+
+.text-name__buttons {
+	display: flex;
+	column-gap: 1.875rem;
+}
+
