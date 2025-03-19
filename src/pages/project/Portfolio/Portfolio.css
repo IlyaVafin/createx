@@ -3,6 +3,7 @@
 	grid-template-columns: repeat(3, 3fr);
 	margin-top: 7.5rem;
 	gap: 1.875rem;
+	margin-bottom: 100px;
 }
 
 .portfolio__btn-more {
